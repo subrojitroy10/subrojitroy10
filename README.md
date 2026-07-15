@@ -111,31 +111,68 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 
 ---
 
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subrojitroy10&theme=tokyonight" alt="Activity Graph" width="97%" />
+</p>
+
+> [!NOTE]
+> Language distribution and total codebase statistics cards are omitted as they only index public metadata, which misrepresents this account's primary private development work. The activity and streak graphs above dynamically include private commits when enabled in your profile settings.
+
+---
+
 ## 💻 Tech Stack & Tooling
 
 ### 🌐 Languages
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,ts,js,postgres,bash,html,css" alt="Languages" /></a>
+<p align="left">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,ts,js,postgres,bash,html,css" alt="Languages" height="40" /></a>
+</p>
 
 ### 🎨 Frontend
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind" alt="Frontend" /></a>
+<p align="left">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind" alt="Frontend" height="40" /></a>
+</p>
 
 ### ⚙️ Backend
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=fastapi,nodejs" alt="Backend" /></a>
+<p align="left">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=fastapi,nodejs" alt="Backend" height="40" /></a>
+</p>
 
 ### 🧠 AI & Machine Learning
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=sklearn,openai" alt="AI & Machine Learning" /></a>
+<p align="left">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=sklearn" alt="Scikit-Learn" height="40" /></a>
+  &nbsp;
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" height="40" />
+</p>
 
 ### 📊 Data Engineering
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=numpy" alt="Data Engineering" /></a>
+<p align="left">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" height="40" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" alt="SciPy" height="40" />
+</p>
 
 ### 🖥️ Infrastructure
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,redis,git,githubactions,linux,nginx" alt="Infrastructure" /></a>
+<p align="left">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,redis,git,githubactions,linux,nginx" alt="Infrastructure" height="40" /></a>
+</p>
 
 ### ☁️ Cloud
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=azure,aws,supabase,vercel" alt="Cloud" /></a>
+<p align="left">
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=azure,aws,supabase,vercel" alt="Cloud" height="40" /></a>
+</p>
 
 ### 🤖 Automation & Data Acquisition
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=playwright,puppeteer" alt="Automation & Data Acquisition" /></a>
+<p align="left">
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" height="40" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Puppeteer-40B5A4?style=flat-square&logo=puppeteer&logoColor=white" alt="Puppeteer" height="40" />
+</p>
 
 ---
 
