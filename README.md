@@ -114,20 +114,19 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <!-- REPLACE the subdomains below with your custom Vercel URLs after completing the steps in SELF_HOSTING.md -->
-  <img src="https://github-readme-stats-yourname.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight" alt="Subrojit's GitHub Stats" width="48%" />
+  <a href="https://github.com/subrojitroy10">
+    <img src="https://github-stats-extended-alpha.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true" alt="Subrojit's GitHub Stats" width="48%" />
+  </a>
   &nbsp;
-  <img src="https://github-readme-stats-yourname.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
+  <a href="https://github.com/subrojitroy10">
+    <img src="https://github-stats-extended-alpha.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight&count_private=true" alt="Top Languages" width="48%" />
+  </a>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats-yourname.vercel.app/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
-</p>
-
-> [!TIP]
-> **Show Private Contribution Data**: To show your true 326+ private commits and stats on the cards above (replicating the reference profile setup), you must self-host these widgets on Vercel using your personal GitHub token.
-> 
-> Detailed instructions are fully documented in [SELF_HOSTING.md](SELF_HOSTING.md).
+> [!NOTE]
+> **Self-Hosted Metrics**: The cards above are dynamically rendered by a private, self-hosted deployment of `github-stats-extended` on Vercel. Because the server is configured with your Personal Access Token, it securely queries and displays your accurate private repository commit metadata and language ratios.
+>
+> *Streak statistics are omitted from this section to keep the profile infrastructure simple and avoid deploying secondary server repositories.*
 
 ---
 
