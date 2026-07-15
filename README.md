@@ -114,23 +114,20 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true" alt="Subrojit's GitHub Stats" width="48%" />
+  <!-- REPLACE the subdomains below with your custom Vercel URLs after completing the steps in SELF_HOSTING.md -->
+  <img src="https://github-readme-stats-yourname.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight" alt="Subrojit's GitHub Stats" width="48%" />
   &nbsp;
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight&count_private=true" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats-yourname.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
+  <img src="https://github-readme-streak-stats-yourname.vercel.app/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subrojitroy10&theme=tokyonight" alt="Activity Graph" width="97%" />
-</p>
-
-> [!NOTE]
-> **API Limitation Alert**: The charts above reflect only public metadata due to GitHub's public API security models. Even with "Show private contributions" active on your profile, external widget servers cannot access private repository metadata without your user-specific Personal Access Token. 
+> [!TIP]
+> **Show Private Contribution Data**: To show your true 326+ private commits and stats on the cards above (replicating the reference profile setup), you must self-host these widgets on Vercel using your personal GitHub token.
 > 
-> *To display your complete 326+ contributions, you can deploy your own instance of these widgets on Vercel using your personal GitHub token.*
+> Detailed instructions are fully documented in [SELF_HOSTING.md](SELF_HOSTING.md).
 
 ---
 
