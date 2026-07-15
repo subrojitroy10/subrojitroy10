@@ -111,24 +111,6 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 
 ---
 
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true" alt="Subrojit's GitHub Stats" width="48%" />
-  &nbsp;
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight&count_private=true" alt="Top Languages" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subrojitroy10&theme=tokyonight" alt="Activity Graph" width="97%" />
-</p>
-
----
-
 ## 💻 Tech Stack & Tooling
 
 ### 🌐 Languages
@@ -140,11 +122,14 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 ### ⚙️ Backend
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=fastapi,nodejs" alt="Backend" /></a>
 
-### 🧠 Data & AI
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=numpy,pandas,sklearn,openai" alt="Data & AI" /></a>
+### 🧠 AI & Machine Learning
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=sklearn,openai" alt="AI & Machine Learning" /></a>
+
+### 📊 Data Engineering
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=numpy" alt="Data Engineering" /></a>
 
 ### 🖥️ Infrastructure
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,redis,docker,git,githubactions,linux,nginx" alt="Infrastructure" /></a>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,redis,git,githubactions,linux,nginx" alt="Infrastructure" /></a>
 
 ### ☁️ Cloud
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=azure,aws,supabase,vercel" alt="Cloud" /></a>
