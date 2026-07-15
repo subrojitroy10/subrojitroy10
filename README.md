@@ -113,34 +113,44 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 
 ## 📊 GitHub Analytics
 
-<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td width="50%" align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true&hide_border=true" alt="Subrojit's GitHub Stats" />
-    </td>
-    <td width="50%" align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight&count_private=true&hide_border=true" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
-
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subrojitroy10&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="100%" />
+  <img src="https://github-stats-extended.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true" alt="Subrojit's GitHub Stats" width="48%" />
+  &nbsp;
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight&count_private=true" alt="Top Languages" width="48%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subrojitroy10&theme=tokyonight&hide_border=true" alt="Activity Graph" width="100%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subrojitroy10&theme=tokyonight" alt="Activity Graph" width="97%" />
 </p>
 
 ---
 
 ## 💻 Tech Stack & Tooling
 
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,ts,postgres,redis,aws,azure,docker,githubactions,nextjs,react,vite,nodejs,js,html,css" alt="My Skills" />
-  </a>
-</p>
+### 🌐 Languages
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,ts,js,postgres,bash,html,css" alt="Languages" /></a>
+
+### 🎨 Frontend
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind" alt="Frontend" /></a>
+
+### ⚙️ Backend
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=fastapi,nodejs" alt="Backend" /></a>
+
+### 🧠 Data & AI
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=numpy,pandas,sklearn,openai" alt="Data & AI" /></a>
+
+### 🖥️ Infrastructure
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,redis,docker,git,githubactions,linux,nginx" alt="Infrastructure" /></a>
+
+### ☁️ Cloud
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=azure,aws,supabase,vercel" alt="Cloud" /></a>
+
+### 🤖 Automation & Data Acquisition
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=playwright,puppeteer" alt="Automation & Data Acquisition" /></a>
 
 ---
 
