@@ -111,21 +111,6 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 
 ---
 
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subrojitroy10&theme=tokyonight" alt="Activity Graph" width="97%" />
-</p>
-
-> [!NOTE]
-> Language distribution and total codebase statistics cards are omitted as they only index public metadata, which misrepresents this account's primary private development work. The activity and streak graphs above dynamically include private commits when enabled in your profile settings.
-
----
-
 ## 💻 Tech Stack & Tooling
 
 ### 🌐 Languages
