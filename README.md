@@ -115,7 +115,7 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 
 <p align="center">
   <a href="https://github.com/subrojitroy10">
-    <img src="https://github-stats-extended-alpha.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true&hide=stars,issues,prs,contribs&hide_rank=true" alt="Subrojit's GitHub Stats" width="48%" />
+    <img src="https://github-stats-extended-alpha.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true&hide_rank=true" alt="Subrojit's GitHub Stats" width="48%" />
   </a>
   &nbsp;
   <a href="https://github.com/subrojitroy10">
