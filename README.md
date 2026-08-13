@@ -115,16 +115,16 @@ My training in Physics and Astrophysics serves as the foundation for how I model
 
 <p align="center">
   <a href="https://github.com/subrojitroy10">
-    <img src="https://github-stats-extended-alpha.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&count_private=true&hide_rank=true" alt="Subrojit's GitHub Stats" width="48%" />
+    <img src="https://github-stats-extended-alpha.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight&include_all_commits=true&hide_rank=true" alt="Subrojit's GitHub Stats" width="48%" />
   </a>
   &nbsp;
   <a href="https://github.com/subrojitroy10">
-    <img src="https://github-stats-extended-alpha.vercel.app/api/top-langs?username=subrojitroy10&layout=compact&theme=tokyonight&count_private=true" alt="Top Languages" width="48%" />
+    <img src="https://github-stats-extended-alpha.vercel.app/api/top-langs?username=subrojitroy10&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
   </a>
 </p>
 
 > [!NOTE]
-> **Self-Hosted Metrics**: The cards above are dynamically rendered by a private, self-hosted deployment of `github-stats-extended` on Vercel. Because the server is configured with your Personal Access Token, it securely queries and displays your accurate private repository commit metadata and language ratios.
+> **Self-Hosted Metrics**: The cards above are dynamically rendered by a private, self-hosted deployment of `github-stats-extended` on Vercel. `include_all_commits=true` makes the commit count use GitHub's REST search API (`author:username`) instead of the default GraphQL contribution graph, which is required to get an accurate total across private repos — the GraphQL `contributionsCollection` field is known to undercount private commits even with a correctly-scoped token.
 >
 > *Streak statistics are omitted from this section to keep the profile infrastructure simple and avoid deploying secondary server repositories.*
 
