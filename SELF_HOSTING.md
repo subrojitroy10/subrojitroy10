@@ -1,71 +1,93 @@
-# Replicating the Self-Hosted GitHub Analytics Setup
+# GitHub Profile Metrics — Current Setup
 
-To display your accurate **326+ contributions** and private repository statistics on your profile README without rate limits, you must deploy your own private instances of the analytics generators. 
+This repository is the source for the `subrojitroy10/subrojitroy10` profile README.
 
-Follow this step-by-step guide to complete the migration.
+The profile deliberately separates **public presentation** from **private repository access**. Private repository names, source code, commit messages and other private content must never be written into this repository or exposed by a generated card.
 
----
+## Current architecture
 
-## Step 1: Generate a GitHub Personal Access Token (PAT)
+The profile currently uses three kinds of metrics:
 
-Your self-hosted servers need a token to read your private repository statistics.
+1. **Primary GitHub stats** — rendered by the existing private deployment of `github-stats-extended` at `github-stats-extended-alpha.vercel.app`.
+2. **Top languages** — rendered by the same private deployment.
+3. **Contribution streak** — rendered by `streak-stats.demolab.com` from contribution activity visible on the GitHub profile.
+4. **Profile views** — rendered by `komarev.com/ghpvc`.
 
-1. Go to your GitHub account **Settings** $\to$ **Developer Settings** $\to$ **Personal Access Tokens** $\to$ **Tokens (classic)**.
-2. Click **Generate new token** (classic).
-3. Set the Note to `github-readme-stats-server`.
-4. Select the following scopes:
-   *   `repo` (Full control of private repositories)
-   *   `read:user` (Read user profile data)
-5. Click **Generate token** and copy the resulting string (starts with `ghp_`). Keep this safe.
+The GitHub account has private-contribution visibility enabled. GitHub can therefore expose aggregate private contribution activity on the public contribution graph without exposing the underlying private repository identities or activity details.
 
----
+## Why the primary stats deployment is self-hosted
 
-## Step 2: Deploy GitHub Readme Stats to Vercel
+The stats card uses:
 
-This hosts the stats and top languages cards.
-
-1. Visit the source repository: [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats).
-2. Scroll down to the **Deploy** section and click the **Deploy with Vercel** button.
-3. Log in to Vercel with your GitHub account.
-4. When configuring the deployment, add an **Environment Variable**:
-   *   **Name**: `PAT_1`
-   *   **Value**: *Paste your generated GitHub PAT (`ghp_...`)*
-5. Click **Deploy**.
-6. Once deployed, note your custom Vercel subdomain (e.g., `github-readme-stats-yourname.vercel.app`).
-
----
-
-## Step 3: Deploy Streak Stats to Vercel
-
-This hosts the daily streak calendar card.
-
-1. Visit the source repository: [github-readme-streak-stats](https://github.com/denvercoder1/github-readme-streak-stats).
-2. Scroll down to the **Deployment** section and click **Deploy to Vercel**.
-3. Log in to Vercel.
-4. Add the **Environment Variable**:
-   *   **Name**: `PAT_1`
-   *   **Value**: *Paste your generated GitHub PAT (`ghp_...`)*
-5. Click **Deploy**.
-6. Note your custom streak subdomain (e.g., `github-readme-streak-stats-yourname.vercel.app`).
-
----
-
-## Step 4: Update your Profile README.md
-
-Once your servers are live, open your [README.md](file:///d:/PolyNovea/PolyNovea/Docx/Company%20Docx/github/README.md) and replace the placeholders in the **GitHub Analytics** section with your newly created Vercel domains:
-
-```markdown
-<!-- Replace 'your-stats-subdomain' and 'your-streak-subdomain' with your active Vercel domains -->
-
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://your-stats-subdomain.vercel.app/api?username=subrojitroy10&show_icons=true&theme=tokyonight" alt="Subrojit's GitHub Stats" width="48%" />
-  &nbsp;
-  <img src="https://your-stats-subdomain.vercel.app/api/top-langs/?username=subrojitroy10&layout=compact&theme=tokyonight" alt="Top Languages" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://your-streak-subdomain.vercel.app/?user=subrojitroy10&theme=tokyonight" alt="GitHub Streak" width="97%" />
-</p>
+```text
+include_all_commits=true
 ```
+
+The private deployment has its own GitHub API credentials and can therefore calculate aggregate statistics with access that a generic public card service would not have.
+
+The README must never contain the token itself. Credentials belong only in the hosting provider's encrypted environment variables / secrets.
+
+## Rank / grade marker
+
+The rank indicator on the main GitHub stats card is enabled by leaving `hide_rank` unset (or setting it to `false`).
+
+Do **not** add `hide_rank=true` unless the rank display is intentionally being removed.
+
+## Streak card
+
+The README currently uses:
+
+```text
+https://streak-stats.demolab.com?user=subrojitroy10&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&mode=daily&timezone=Asia%2FKolkata
+```
+
+This provides total contribution / current streak / longest streak presentation similar to other high-signal GitHub profile READMEs.
+
+A streak is only an activity indicator. It should not be described as a quality, productivity or engineering-performance score.
+
+## Profile views
+
+The visitor badge uses:
+
+```text
+https://komarev.com/ghpvc/?username=subrojitroy10
+```
+
+Treat this as a README/profile request counter rather than a unique-human analytics system.
+
+## Credential guidance
+
+If the self-hosted stats deployment ever needs to be recreated:
+
+- Prefer the least-privileged token type and scopes supported by the deployed stats implementation.
+- Only grant private-repository read access when it is actually required for aggregate private statistics.
+- Store the token only in Vercel/GitHub encrypted secrets or environment variables.
+- Never commit a PAT, token, `.env` file, Vercel environment dump or API response containing private repository metadata.
+- Rotate the token immediately if it is ever printed in a log or committed.
+
+Some GitHub stats implementations/forks have different support for fine-grained versus classic tokens, so verify the current upstream documentation before creating or rotating credentials rather than copying an old scope recipe.
+
+## Future reliability upgrade
+
+The next infrastructure improvement should be to generate the metric SVGs on a scheduled GitHub Actions workflow and commit/update only the generated SVG assets, for example:
+
+```text
+profile/
+  stats.svg
+  streak.svg
+  languages.svg
+```
+
+The README would then reference local repository assets rather than depending on live image generation for every profile view.
+
+Do not switch the primary private-aware stats card to a static workflow until the workflow's access model has been tested against the existing self-hosted card. The migration must not silently reduce private contribution coverage or expose private metadata.
+
+## Validation after README changes
+
+Before pushing profile changes:
+
+1. Confirm `README.md` contains no secrets or private repository names that are not intended to be public.
+2. Confirm the main stats URL does not contain `hide_rank=true` when the rank marker is expected.
+3. Confirm the stats, languages, streak, typing and profile-view image endpoints return successfully.
+4. Review the Git diff.
+5. Push only after the working tree contains the intended profile/documentation changes.
